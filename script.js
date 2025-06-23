@@ -9,7 +9,7 @@ canvas.height = height;
 const mouse = { x: null, y: null };
 const particleCount = 8000;
 const particles = [];
-const scaleBase = 15;
+const scaleBase = 13.5;
 let pulse = 1;
 
 const colors = ['#ff4d4d', '#ff9999', '#ff1a75', '#ff6666'];
