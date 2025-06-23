@@ -9,7 +9,10 @@ canvas.height = height;
 const mouse = { x: null, y: null };
 const particleCount = 8000;
 const particles = [];
-const scaleBase = 15;
+
+// 🎯 Tamanho do coração: menor no celular, normal no PC
+const scaleBase = window.innerWidth <= 600 ? 9.5 : 15;
+
 let pulse = 1;
 
 const colors = ['#ff4d4d', '#ff9999', '#ff1a75', '#ff6666'];
@@ -177,7 +180,7 @@ function animate() {
 
 animate();
 
-// Redimensionamento
+// Redimensionamento da tela
 window.addEventListener("resize", () => {
   width = window.innerWidth;
   height = window.innerHeight;
