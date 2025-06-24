@@ -10,7 +10,6 @@ const mouse = { x: null, y: null };
 const particleCount = 8000;
 const particles = [];
 
-// 🎯 Tamanho do coração: menor no celular, normal no PC
 const scaleBase = window.innerWidth <= 600 ? 9.5 : 15;
 
 let pulse = 1;
